@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Mini_Project/styless.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>แบบทดสอบความรักขององค์กร</title>
+
+</head>
+<style>
+    body {
+        font-family: "Prompt", sans-serif;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        height: 100vh;
+        margin: 0;
+        background-color: #EAD8C0;
+        padding: 20px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div style="text-align: center;">
+            <h1>ทดสอบความรักขององค์กร</h1>
+        </div>
+        <p>แบบทดสอบว่าคุณใส่ใจในองค์กรมากแค่ไหน</p>
+        <div class="quiz-container">
+            <p id="question">1. CP ย่อมาจากอะไร ?</p>
+            <button class="button" onclick="checkAnswer('a')">A) Command Perfect</button>
+            <button class="button" onclick="checkAnswer('b')">B) CP all public company limited</button>
+            <br>
+            <button class="button" onclick="checkAnswer('c')">C) Complex Picture</button>
+            <button class="button" onclick="checkAnswer('d')">D) CUP PHOM</button>
+            <p id="result"></p>
+        </div>
+        <br>
+        <div class="quiz-container">
+            <p id="question">2. 5 Principles หมายความว่าอย่างไร ?</p>
+            <button class="button" onclick="checkAnswer2('a')">A) 5 รัก </button>
+            <button class="button" onclick="checkAnswer2('b')">B) 4 ร่วม </button>
+            <br>
+            <button class="button" onclick="checkAnswer2('c')">C) Harmomy</button>
+            <button class="button" onclick="checkAnswer2('d')">D) 7 ส.</button>
+            <p id="result_2"></p>
+        </div>
+        <br>
+        <div class="quiz-container">
+            <p id="question">3. C C S F ประกอบด้วยอะไรบ้าง ?</p>
+            <button class="button" onclick="checkAnswer3('a')">A) Complex Command Samp Fun</button>
+            <button class="button" onclick="checkAnswer3('b')">B) Cool Cat Sap Full</button>
+            <br>
+            <button class="button" onclick="checkAnswer3('c')">C) Clear Care Share Fun</button>
+            <button class="button" onclick="checkAnswer3('d')">D) Canvas Code Small Font</button>
+            <p id="result_3"></p>
+        </div>
+        <br>
+        <div class="quiz-container">
+            <p id="question">4. 5 Principles ประกอบด้วยอะไรบ้าง ?</p>
+            <button class="button" onclick="checkAnswer4('a')">A) รักงาน รักลูกค้า รักคุณธรรม รักองค์กร รักทีมงาน</button>
+            <button class="button" onclick="checkAnswer4('b')">B) รักแม่ รักพ่อ รักแฟน รักเตง รักนะ</button>
+            <br>
+            <button class="button" onclick="checkAnswer4('c')">C) รักหมา รักแมว รักคนอื่น รักคุณธรรม รักลูกค้า</button>
+            <button class="button" onclick="checkAnswer4('d')">D) แกร่ง กล้า สัจจะวาจา สามัคคี รักทีมงาน</button>
+            <p id="result_4"></p>
+        </div>
+        <br>
+        <div class="quiz-container">
+            <p id="question">5. สิ่งที่ปรารถนาที่อยากให้พนักงานมีคือ ?</p>
+            <button class="button" onclick="checkAnswer5('a')">A) 5 Principles</button>
+            <button class="button" onclick="checkAnswer5('b')">B) 11 Leadership</button>
+            <br>
+            <button class="button" onclick="checkAnswer5('c')">C) Harmomy</button>
+            <button class="button" onclick="checkAnswer5('d')">D) 7 values</button>
+            <p id="result_5"></p>
+        </div>
+        <br>
+
+        <p id="result_Submit"></p>
+        <br>
+    </div>
+
+</body>
+
+</html>
+
+<script src="../Mini_Project/script.js"></script>
